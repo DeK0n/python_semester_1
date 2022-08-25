@@ -28,6 +28,7 @@ weight_lots = float(input('Enter lots: '))
 weight_total_in_gramms = ((weight_talents*20+weight_pounds)*32+weight_lots)*13.3
 weight_kilos_int = weight_total_in_gramms//1000 # "//" is division for integer result
 weight_gramms_fractional = weight_total_in_gramms - weight_kilos_int*1000 # "-" is minus sign
+# weight_gramms_fractional = weight_total_in_gramms % (weight_kilos_int*1000) #also works with "%" modulo operation (finds remainder)
 print("The weight in modern units is: ")
 print(f"{weight_kilos_int:.0f} kg and {weight_gramms_fractional: .2f} g")
 
