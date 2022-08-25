@@ -25,12 +25,11 @@ print("\n Enter weight in medieval talents, pounds and lots")
 weight_talents = float(input('Enter talents: '))
 weight_pounds = float(input('Enter pounds: '))
 weight_lots = float(input('Enter lots: '))
-print("The weights in modern units are: ")
 weight_total_in_gramms = weight_talents*20*32*13.3+weight_pounds*32*13.3+weight_lots*13.3
-weight_kilos = int(weight_total_in_gramms/1000)
-print(weight_kilos)
+weight_kilos = weight_total_in_gramms//1000 # "//" is division for integer result
 weight_gramms_left = weight_total_in_gramms - weight_kilos*1000
-print(f"The weight in modern units is:  {weight_kilos} kg and {weight_gramms_left: .2f} gramms")
+print("The weight in modern units is: ")
+print(f"{weight_kilos:.0f} kg and {weight_gramms_left: .2f} g")
 
 #6
 print("\n Here are some random numbers: ")
