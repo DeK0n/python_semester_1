@@ -35,5 +35,5 @@ print(f"{weight_kilos_int:.0f} kg and {weight_gramms_fractional: .2f} g")
 
 #6
 print("\nHere are some random numbers: ")
-print(f"{random.randint(0, 999):03d}")
+print(f"{random.randint(0, 999):03f}")
 print(str(random.randint(0, 9)) + str(random.randint(0, 9)) + str(random.randint(0, 9)))
