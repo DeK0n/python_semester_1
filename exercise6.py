@@ -27,5 +27,3 @@
 # The function calculates and returns the unit price of the pizza per square meter. The main program asks the user to enter 
 # the diameter and price of two pizzas and tells the user which pizza provides better value for money (which of them has a lower unit price).
 # You must use the function you wrote for calculating the unit prices.
-
-gfhdg
