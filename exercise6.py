@@ -1,12 +1,30 @@
+import random
 #1
 # Write a function that returns a random dice roll between 1 and 6. The function should not have any parameters.
 # Write a main program that rolls the dice until the result is 6. The main program should print out the result of each roll.
 
+# dice = 0
+# def dice_roll():
+#     random_dice = random.randint(1, 6)
+#     return random_dice
+# while dice != 6:
+#     dice=dice_roll()
+#     print(dice)
+    
 #2
 # Modify the function above so that it gets the number of sides on the dice as a parameter.
 # With the modified function you can for example roll a 21-sided role-playing dice. 
 # The difference to the last exercise is that the dice rolling in the main program continues 
 # until the program gets the maximum number on the dice, which is asked from the user at the beginning.
+
+dice = 0
+def dice_roll(sides):
+    random_dice = random.randint(1, sides)
+    return random_dice
+sides = int(input("Enter number of sides:"))
+while dice != sides:
+    dice=dice_roll(sides)
+    print(dice)
 
 #3
 # Write a function that gets the quantity of gasoline in American gallons and returns the number converted to litres. 
