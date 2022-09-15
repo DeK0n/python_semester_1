@@ -11,6 +11,7 @@ while rolls != rolls_total:
     rolls = rolls+1
     dice_list.append(int(random.randint(1, 6)))
 for x in dice_list:
+    
     dice_sum = dice_sum+x
 print("The sum of all throws is: " + str(dice_sum) +" ("+ str(dice_list)+")")
 
@@ -55,6 +56,16 @@ else:
     else:
         print("This number is a PRIME number.")
 
+# Jarkko's variant
+
+# import math
+# n = int(input("number?"))
+# for i in range(2, int(math.sqrt(n))+1):
+#     if n % i == 0:
+#         print(f"dividable by {i}")
+#         break
+# else:
+#     print("prime")
 
 # 4
 # Write a program that asks the user to enter the names of five cities one by on (use a for loop for reading the names)

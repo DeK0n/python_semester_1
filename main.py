@@ -1,12 +1,8 @@
-# integer=int(input("Type in integer:"))
-# factorial=1
-# if integer <=0:
-#     print("Your integer is <= 0, so bye bye!")
-# while integer>0:
-#     for x in range(1,(integer+1)):
-#       factorial=factorial*integer
-#       integer=integer-1
-#     print("The factorial of your integer is: " +str(factorial))
-#     factorial=1
-#     integer=int(input("Type in integer:"))
-     
+import math
+n = int(input("number?"))
+for i in range(2, int(math.sqrt(n))+1):
+    if n % i == 0:
+        print(f"dividable by {i}")
+        break
+else:
+    print("prime")
