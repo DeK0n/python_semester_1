@@ -3,20 +3,30 @@
 # (spring, summer, autumn, winter). Save the seasons as strings into a tuple in your program.
 #  We can define each season to last three months, December being the first month of winter.
 
-seasons = ("December","January","February","March","April","May","June","July","August","September","October","November")
-month = input("Write a month:")
-x = seasons.index(month)
+# seasons = ("December","January","February","March","April","May","June","July","August","September","October","November")
+# month = input("Write a month:")
+# x = seasons.index(month)
+# if 0<=x<=2:
+#     print("Season is winter")
+# if 3<=x<=5:
+#     print("Season is spring")
+# if 6<=x<=8:
+#     print("Season is summer")
+# if 9<=x<=11:
+#     print("Season is autmn")
+
+seasons = ("Winter","Spring","Summer","Autmn")
+x=int(input("Type in month number:"))
 if 0<=x<=2:
-    print("Season is winter")
+    print("Season is "+str(seasons[0]))
 if 3<=x<=5:
-    print("Season is spring")
+    print("Season is "+str(seasons[1]))
 if 6<=x<=8:
-    print("Season is summer")
+    print("Season is "+str(seasons[2]))
 if 9<=x<=11:
-    print("Season is autmn")
+    print("Season is "+str(seasons[3]))
 
 
-# 2
 # Write a program that asks the user to enter names until he/she enters an empty string.
 # After each name is read the program either prints out New name or Existing name depending
 # on whether the name was entered for the first time. Finally, the program lists out
