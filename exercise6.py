@@ -77,7 +77,7 @@ print(str(integer_list_changer(integer_list)))
 
 import math
 def pizza_function(diameter,price):
-    price_per_sqmeter=price/(math.pi*(diameter/200)*(diameter/200))
+    price_per_sqmeter=price/(math.pi*(diameter/200)**2)
     return price_per_sqmeter
 print("Enter price(€) and diameters(cm) of two pizzas")
 diameter = float(input("Enter diameter of the first pizza:"))
