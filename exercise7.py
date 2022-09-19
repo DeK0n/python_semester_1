@@ -15,15 +15,15 @@
 # if 9<=x<=11:
 #     print("Season is autmn")
 
-seasons = ("Winter","Spring","Summer","Autmn")
-x=int(input("Type in month number:"))
-if 0<=x<=2:
+seasons = ("Winter", "Spring", "Summer", "Autmn")
+x = int(input("Type in month number:"))
+if 0 <= x <= 2:
     print("Season is "+str(seasons[0]))
-if 3<=x<=5:
+if 3 <= x <= 5:
     print("Season is "+str(seasons[1]))
-if 6<=x<=8:
+if 6 <= x <= 8:
     print("Season is "+str(seasons[2]))
-if 9<=x<=11:
+if 9 <= x <= 11:
     print("Season is "+str(seasons[3]))
 
 
@@ -57,24 +57,21 @@ for q in names_list:
 #  For example, the ICAO code of Helsinki-Vantaa Airport is EFHK. You can easily find the ICAO codes
 #  of different airports online.)
 
-dictionary ={}
+dictionary = {}
 print("Input 1 to enter new airport")
 print("Input 2 to fetch information of existing airport")
 print("Input 3 to exit")
 command = int(input("Choose command:"))
-while command !=3:
+while command != 3:
     if command == 1:
         print("input ICAO code and airport name")
-        icao=input("ICAO: ")
-        name=input("Name: ")
+        icao = input("ICAO: ")
+        name = input("Name: ")
         dictionary[icao] = name
     elif command == 2:
         print("input ICAO to get name of the airport")
-        icao=input("ICAO: ")
+        icao = input("ICAO: ")
         print(dictionary[icao])
     else:
         print("Input error")
     command = int(input("Choose command:"))
-
-    
-
