@@ -109,15 +109,6 @@ for r in cars_list:
     Car.show(r)    
 
 
-# travMAx = 0
-# # while travMAx < 10000:
-# for t in cars_list:
-#     x = random.randint(-10, 15)
-#     Car.accelerate(t, x)
-#     Car.drive(t, 1)
-
-
-
 # 5
 # The race continues until one of the cars has advanced at least 10,000 kilometers. Finally, the properties of each
 # car are printed out formatted into a clear table
