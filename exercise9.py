@@ -4,6 +4,21 @@
 # distance of a new car must be automatically set to zero. Write a main program where you create a new car
 # (registration number ABC-123, maximum speed 142 km/h). Finally, print out all the properties of the new car.
 
+# class Car:
+#     def __init__(self, id = "", mspeed = 0, cspeed = 0, dist = 0) -> None:
+#         self.id = id
+#         self.mspeed = mspeed
+#         self.cspeed = cspeed
+#         self.dist = dist
+#         pass
+#     def show(self):
+#         print(self.id, self.mspeed, self.cspeed, self.dist)
+
+# NewCar = Car("ABC-123", 142)
+# Car.show(NewCAr)
+
+
+
 #2
 # Extend the program by adding an accerelate method into the new class. The method should receive the change of speed (km/h)
 # as a parameter. If the change is negative, the car reduces speed. The method must change the value of the speed property
@@ -12,11 +27,44 @@
 # the current speed of the car. Finally, use the emergency brake by forcing a -200 km/h change on the speed and 
 # then print out the final speed. The travelled distance does not have to be updated yet.
 
+class Car:
+    def __init__(self, id = "", mspeed = 0, cspeed = 0, dist = 0) -> None:
+        self.id = id
+        self.mspeed = mspeed
+        self.cspeed = cspeed
+        self.dist = dist
+        pass
+    def show(self):
+        print(self.id, self.mspeed, self.cspeed, self.dist)
+    def accelerate(self, change):
+        self.cspeed = self.cspeed + change 
+        if self.cspeed < 0:
+            self.cspeed = 0
+        elif self.cspeed > self.mspeed:
+            self.cspeed = self.mspeed
+        else:
+            self.cspeed = self.cspeed
+        
+NewCar = Car("ABC-123", 142)
+Car.show(NewCar)
+Car.accelerate(NewCar, 30)
+Car.show(NewCar)
+Car.accelerate(NewCar, 70)
+Car.show(NewCar)
+Car.accelerate(NewCar, 50)
+Car.show(NewCar)
+Car.accelerate(NewCar, -200)
+Car.show(NewCar)
+
+
 #3
 # Again, extend the program by adding a new drive method that receives the number of hours as a parameter. 
 # The method increases the travelled distance by how much the car has travelled in constant speed in the given time. 
 # Example: The travelled distance of car object is 2000 km. The current speed is 60 km/h. Method call car.drive(1.5) 
 # increases the travelled distance to 2090 km.
+
+
+
 
 #4
 # Now we will program a car race. The travelled distance of a new car is initialized as zero.
@@ -31,4 +79,4 @@
 
 #5
 # The race continues until one of the cars has advanced at least 10,000 kilometers. Finally, the properties of each 
-# car are printed out formatted into a clear table.
+# car are printed out formatted into a clear table
