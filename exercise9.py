@@ -3,9 +3,9 @@ import random
 class Car:
     def __init__(self, id="", mspeed=0, cspeed=0, dist=0) -> None:
         self.id = id
-        self.mspeed = mspeed
-        self.cspeed = cspeed
-        self.dist = dist
+        self.mspeed = mspeed #maximim speed
+        self.cspeed = cspeed #current spped
+        self.dist = dist #travelled distance
         pass
 
     def show(self):
